@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://w7.pngwing.com/pngs/546/46/png-transparent-weather-forecasting-severe-weather-storm-weather-free-text-heart-logo-thumbnail.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <main>
+    <section class="continer">
+      <h1>Weather App</h1>
+      <form onsubmit="getdata(event)">
+        <input type="text" name="cityName" class="SearchCity" placeholder="Enter the City Name">
+        <button>Search</button>
+      </form>
+      <section class="details">
+        <div class="cityDetails">
+          <div class="card">
+            <p>Country Name</p>
+            <p class="countryName">_</p>
+          </div>
+          <div class="card">
+            <p>State Name</p>
+            <p class="stateName">_</p>
+          </div>
+          <div class="card">
+            <p>City Name</p>
+            <p class="cityName">_</p>
+          </div>
+        </div>
+        <div class="weatherDetails">
+          <div class="card">
+            <p>Humidity</p>
+            <p class="humidity">_</p>
+          </div>
+          <div class="card">
+            <p>Wind Speed</p>
+            <p><span class="windSpeed">_</span>  KPH</p>
+          </div>
+          <div class="card">
+            <p>Temperature</p>
+            <p><span class="temperature">_</span>&#8451</p>
+          </div>
+          <div class="card">
+            <img class="weatherImg" src="https://cdn.weatherapi.com/weather/64x64/day/119.png">
+            <p class="weatherStatus">_</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
